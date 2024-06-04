@@ -1,0 +1,11 @@
+{
+  "name": "biobrief",
+  "version": "1.0.0",
+  "description": "TLDR for the Pharma and Biotech",
+  "main": "index.js",
+  "scripts": {
+    "test": "--t"
+  },
+  "author": "",
+  "license": "ISC"
+}
