@@ -1,8 +1,12 @@
 import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
+from news_fetchers import newsapi_fetcher
 
-def send_email(sender_email, sender_password, recipient_email, subject, body):
+def send_email(sender_email: str, sender_password: str, recipient_email: str, subject, body) -> None:
+    '''
+        Basic Impl. Send e-mail using MIME API
+    '''
     # Create the email message
     msg = MIMEMultipart()
     msg['From'] = sender_email
